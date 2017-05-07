@@ -6,7 +6,7 @@ sbset <- ehc[ehc$Date %in% c("1/2/2007", "2/2/2007"),]
 
 #str(sbset)
 
-Datetime <- strptime(paste(sbset$Date, sbset$Time, sep=" "), format = "%d/%m/%Y %H:%M:%S")
+datetime <- strptime(paste(sbset$Date, sbset$Time, sep=" "), format = "%d/%m/%Y %H:%M:%S")
 
 SMetering1 <- as.numeric(sbset$Sub_metering_1)
 SMetering2 <- as.numeric(sbset$Sub_metering_2)
