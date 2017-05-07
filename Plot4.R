@@ -28,6 +28,6 @@ lines(datetime, SMetering2, col = "red")
 lines(datetime, SMetering3, col = "blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
 
-plot(datetime, GlobalActivePower, type ="l", xlab= "datetime", ylab= "Global_reactive_power")
+plot(datetime, GlobalReactivePower, type ="l", xlab= "datetime", ylab= "Global_reactive_power")
 
 dev.off()
